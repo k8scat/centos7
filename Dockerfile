@@ -12,5 +12,6 @@ make && \
 make install && \
 ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3 && \
 ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3.7 && \
-yum erase -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel wget && \
+# remove libffi-devel failed
+yum erase -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make wget && \
 rm -rf Python-3.7.2.tar.xz Python-3.7.2
